@@ -1,0 +1,10 @@
+﻿@Hostname = localhost
+@Port = 7234
+@BaseUrl = https://{{Hostname}}:{{Port}}
+
+
+###
+# @name AccessShortUrl
+# GET: Retrieve a single registered shortened URL entity
+GET {{BaseUrl}}/di-magic
+Accept: application/json

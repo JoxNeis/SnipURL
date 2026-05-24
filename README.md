@@ -1,2 +1,2 @@
 # SnipURL
-An ASP.NET simple URL Shortener
+A simple URL Shortener API in ASP.NET

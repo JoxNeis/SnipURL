@@ -1,0 +1,32 @@
+﻿@Hostname = localhost
+@Port = 7234
+@BaseUrl = https://{{Hostname}}:{{Port}}/entry
+
+###
+# @name CreateShortUrl
+# POST: Create a brand-new shortened URL mapping 
+POST {{BaseUrl}}
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.google.com/search?q=aspnet+core+dependency+injection",
+  "shortUrl": "di-magic"
+}
+
+###
+# @name GetASingleUrl
+# GET: Retrieve a single registered shortened URL entity
+GET {{BaseUrl}}/di-magic
+Accept: application/json
+
+
+###
+# @name GetAllUrls
+# GET: Retrieve all registered shortened URL entities 
+GET {{BaseUrl}}
+Accept: application/json
+
+###
+# @name DeleteUrl
+# DELETE: Remove a shortened URL record tracking stack
+DELETE {{BaseUrl}}/di-magic
