@@ -17,7 +17,6 @@ namespace SnipURL.Services
         {
             this.repository = repository ?? throw new ArgumentNullException(nameof(repository));
             this.serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
-            this.repository = this.serializer.LoadFromDisk();
         }
         #endregion
 
