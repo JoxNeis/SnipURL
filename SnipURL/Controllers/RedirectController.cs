@@ -9,7 +9,7 @@ namespace SnipURL.Controllers
 {
     [ApiController]
     [Route("/")]
-    public class ServiceController : ControllerBase
+    public class RedirectController : ControllerBase
     {
         #region FIELDS
         private readonly ShortUrlService service;
@@ -19,7 +19,7 @@ namespace SnipURL.Controllers
         /// <summary>
         /// Initializes the controller by injecting the required business logic service layer.
         /// </summary>
-        public ServiceController(ShortUrlService service)
+        public RedirectController(ShortUrlService service)
         {
             this.service = service ?? throw new ArgumentNullException(nameof(service));
         }
