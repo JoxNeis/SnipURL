@@ -14,6 +14,15 @@
 <br/>
 </div>
 
+```
+ ____        _       _    _ ____  _     
+/ ___| _ __ (_)_ __ | |  | |  _ \| |    
+\___ \| '_ \| | '_ \| |  | | |_) | |    
+ ___) | | | | | |_) | |__| |  _ <| |___ 
+|____/|_| |_|_| .__/ \____/|_| \_\_____|
+               |_|   
+```
+    
 ## ✂️ What is SnipURL?
 
 **SnipURL** is a clean, self-hosted URL shortener API. You register a long URL with a custom short code, and SnipURL will redirect anyone who hits that code to the original destination — fast, with optional expiration support.
